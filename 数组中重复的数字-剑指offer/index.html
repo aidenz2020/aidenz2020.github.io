@@ -28,7 +28,7 @@
 <meta property="og:description" content="数组中重复的数字description 在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是第一个重复的数字2。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-11T12:31:41.000Z">
-<meta property="article:modified_time" content="2020-09-11T13:10:21.123Z">
+<meta property="article:modified_time" content="2020-09-12T00:53:34.480Z">
 <meta property="article:author" content="Aidenz">
 <meta property="article:tag" content="-数组 -剑指offer -牛客网">
 <meta name="twitter:card" content="summary">
@@ -199,10 +199,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-09-11 20:31:41 / Modified: 21:10:21" itemprop="dateCreated datePublished" datetime="2020-09-11T20:31:41+08:00">2020-09-11</time>
+              <time title="Created: 2020-09-11 20:31:41" itemprop="dateCreated datePublished" datetime="2020-09-11T20:31:41+08:00">2020-09-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-09-12 08:53:34" itemprop="dateModified" datetime="2020-09-12T08:53:34+08:00">2020-09-12</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -250,7 +256,7 @@
 
 
 
-<h2 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h2><p>0<del>n-1共n个元素，元素取值范围为0</del>n-1，如果没有重复元素，排序完则numbers[i] = i;如果当前</p>
+<h2 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h2><p>0到n-1共n个元素，元素取值范围为0到n-1，如果没有重复元素，排序完则numbers[i] = i;如果当前</p>
 <p>i的位置的值已经与i相等，即numbers[i] = i，再出现一个number与i相等，则认为该numbers为重复值。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">// Parameters:</span></span><br><span class="line">    <span class="comment">//    numbers:     an array of integers</span></span><br><span class="line">    <span class="comment">//    length:      the length of array numbers</span></span><br><span class="line">    <span class="comment">//    duplication: (Output) the duplicated number in the array number,length of duplication array is 1,so using duplication[0] = ? in implementation;</span></span><br><span class="line">    <span class="comment">//                  Here duplication like pointor in C/C++, duplication[0] equal *duplication in C/C++</span></span><br><span class="line">    <span class="comment">//    这里要特别注意~返回任意重复的一个，赋值duplication[0]</span></span><br><span class="line">    <span class="comment">// Return value:       true if the input is valid, and there are some duplications in the array number</span></span><br><span class="line">    <span class="comment">//                     otherwise false</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">duplicate</span><span class="params">(<span class="keyword">int</span> numbers[],<span class="keyword">int</span> length,<span class="keyword">int</span> [] duplication)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i;</span><br><span class="line">        <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; length; i++ ) &#123;</span><br><span class="line">            <span class="keyword">while</span>(numbers[i] != i) &#123;</span><br><span class="line">                <span class="keyword">if</span>(numbers[i] == numbers[numbers[i]]) &#123;</span><br><span class="line">                    duplication[<span class="number">0</span>] = numbers[i];</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">int</span> t = numbers[numbers[i]];</span><br><span class="line">                numbers[numbers[i]] = numbers[i];</span><br><span class="line">                numbers[i] = t;</span><br><span class="line">                <span class="comment">/*在写交换数组元素代码时，不能写成</span></span><br><span class="line"><span class="comment">                int t = numbers[i];</span></span><br><span class="line"><span class="comment">                numbers[i] = numbers[numbers[i]];</span></span><br><span class="line"><span class="comment">                numbers[numbers[i]] = t;</span></span><br><span class="line"><span class="comment">                因为第二行的numbers[i]已经发生改变，不再是之前的数值，所以会时间超限</span></span><br><span class="line"><span class="comment">                */</span></span><br><span class="line">                </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
