@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="翻转链表-LeetCodelinkhttps:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;reverse-linked-list&#x2F; description示例: 输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL进阶:你可以迭代或递归地反转链表。你能否用两种方法解决这道题？ soluti">
+  <meta name="description" content="翻转链表-LeetCodelinkhttps:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;reverse-linked-list&#x2F; description示例: 输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL进阶:你可以迭代或递归地反转链表。你能否用两种方法解决这道题？">
 <meta property="og:type" content="article">
 <meta property="og:title" content="翻转链表-LeetCode">
 <meta property="og:url" content="http://yoursite.com/%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8-LeetCode/index.html">
 <meta property="og:site_name" content="aidenz&#39;s blog">
-<meta property="og:description" content="翻转链表-LeetCodelinkhttps:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;reverse-linked-list&#x2F; description示例: 输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL进阶:你可以迭代或递归地反转链表。你能否用两种方法解决这道题？ soluti">
+<meta property="og:description" content="翻转链表-LeetCodelinkhttps:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;reverse-linked-list&#x2F; description示例: 输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL进阶:你可以迭代或递归地反转链表。你能否用两种方法解决这道题？">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-12T09:01:51.000Z">
-<meta property="article:modified_time" content="2020-09-12T09:06:29.829Z">
+<meta property="article:modified_time" content="2020-09-12T09:11:22.367Z">
 <meta property="article:author" content="Aidenz">
 <meta property="article:tag" content="-LeetCode -链表">
 <meta name="twitter:card" content="summary">
@@ -201,7 +201,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-09-12 17:01:51 / Modified: 17:06:29" itemprop="dateCreated datePublished" datetime="2020-09-12T17:01:51+08:00">2020-09-12</time>
+              <time title="Created: 2020-09-12 17:01:51 / Modified: 17:11:22" itemprop="dateCreated datePublished" datetime="2020-09-12T17:01:51+08:00">2020-09-12</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -248,6 +248,10 @@
         <h1 id="翻转链表-LeetCode"><a href="#翻转链表-LeetCode" class="headerlink" title="翻转链表-LeetCode"></a>翻转链表-LeetCode</h1><h2 id="link"><a href="#link" class="headerlink" title="link"></a>link</h2><p><a href="https://leetcode-cn.com/problems/reverse-linked-list/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/reverse-linked-list/</a></p>
 <h2 id="description"><a href="#description" class="headerlink" title="description"></a>description</h2><p>示例:</p>
 <p>输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL<br>输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL<br>进阶:<br>你可以迭代或递归地反转链表。你能否用两种方法解决这道题？</p>
+<a id="more"></a>
+
+
+
 <h2 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h2><p>解法一：迭代法</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) &#123; val = x; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (head == <span class="keyword">null</span> || head.next == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125;</span><br><span class="line">    ListNode next = head.next;</span><br><span class="line">    ListNode newHead = reverseList(next);</span><br><span class="line">    next.next = head;</span><br><span class="line">    head.next = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">return</span> newHead;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -275,7 +279,10 @@
     <a href="/%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8-LeetCode/" rel="prev" title="相交链表-LeetCode">
       <i class="fa fa-chevron-left"></i> 相交链表-LeetCode
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/AS%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%971-%E6%97%A5%E5%BF%97%E5%B7%A5%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="next" title="AS学习日志1-日志工具的使用">
+      AS学习日志1-日志工具的使用 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -349,20 +356,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -398,12 +405,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="Symbols count total">11k</span>
+    <span title="Symbols count total">38k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">10 mins.</span>
+    <span title="Reading time total">35 mins.</span>
 </div>
 <!--
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>

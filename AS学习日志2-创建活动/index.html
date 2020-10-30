@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="创建活动1. 关掉当前的project 新建一个project点击file-&gt;close project 关掉当前project 新建project 选择 add no activity 点击next ，Name键入 Activity Test Language 选择 java， finish">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AS学习日志2-创建活动">
+<meta property="og:url" content="http://yoursite.com/AS%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%972-%E5%88%9B%E5%BB%BA%E6%B4%BB%E5%8A%A8/index.html">
+<meta property="og:site_name" content="aidenz&#39;s blog">
+<meta property="og:description" content="创建活动1. 关掉当前的project 新建一个project点击file-&gt;close project 关掉当前project 新建project 选择 add no activity 点击next ，Name键入 Activity Test Language 选择 java， finish">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://raw.githubusercontent.com/aidenz2020/FigureBed/master/20200628095501.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/aidenz2020/FigureBed/master/20200628101128.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/aidenz2020/FigureBed/master/20200628101451.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/aidenz2020/FigureBed/master/20200628145015.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/aidenz2020/FigureBed/master/Screenshot_20200628_152020_com.example.activityte.jpg">
+<meta property="article:published_time" content="2020-10-30T02:05:27.000Z">
+<meta property="article:modified_time" content="2020-10-30T02:08:47.060Z">
+<meta property="article:author" content="Aidenz">
+<meta property="article:tag" content="android">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/aidenz2020/FigureBed/master/20200628095501.png">
+
+<link rel="canonical" href="http://yoursite.com/AS%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%972-%E5%88%9B%E5%BB%BA%E6%B4%BB%E5%8A%A8/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>AS学习日志2-创建活动 | aidenz's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">aidenz's blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-calendar"></i>Schedule</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-fw fa-sitemap"></i>Sitemap</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/AS%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%972-%E5%88%9B%E5%BB%BA%E6%B4%BB%E5%8A%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Aidenz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="aidenz's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          AS学习日志2-创建活动
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-10-30 10:05:27 / Modified: 10:08:47" itemprop="dateCreated datePublished" datetime="2020-10-30T10:05:27+08:00">2020-10-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/android/" itemprop="url" rel="index"><span itemprop="name">android</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>4.4k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>4 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="创建活动"><a href="#创建活动" class="headerlink" title="创建活动"></a>创建活动</h1><h2 id="1-关掉当前的project-新建一个project"><a href="#1-关掉当前的project-新建一个project" class="headerlink" title="1. 关掉当前的project 新建一个project"></a>1. 关掉当前的project 新建一个project</h2><p>点击file-&gt;close project 关掉当前project</p>
+<p>新建project 选择 add no activity 点击next ，Name键入 Activity Test Language 选择 java， finish</p>
+<p><img src="https://raw.githubusercontent.com/aidenz2020/FigureBed/master/20200628095501.png" alt=""></p>
+<a id="more"></a>
+
+<h2 id="2-手动创建活动"><a href="#2-手动创建活动" class="headerlink" title="2. 手动创建活动"></a>2. 手动创建活动</h2><p>项目创建成功后，默认使用Android模式的项目结构，我们手动改成Project模式</p>
+<p>可以看到 app/src/main/java/com.example.activitytest目录为空</p>
+<p>右击com.example.activity-&gt;new-&gt;activity-&gt;Empty Activity,将活动命名为FirstActivity，不要勾选Generate Layout File 和Launcher Activity，勾选Generate Layout File 表示自动为FirstActivity创建一个对应的布局文件，勾选Launcher Activity表示自动将FirstActivity设置为当前项目的主活动，</p>
+<h2 id="创建和加载布局"><a href="#创建和加载布局" class="headerlink" title="创建和加载布局"></a>创建和加载布局</h2><p><strong>Android程序设计讲究逻辑和视图分离</strong>，最好每个活动对应每个布局。</p>
+<p>右击app/src/main/res  右击后-&gt;new-&gt;Directory,先创建一个名为layout 的目录。右击layout-&gt;new-&gt;layout resource file, 弹出一个新建布局资源文件的窗口，将这个布局文件命名为first_layout,根元素默认选择LinearLayout 如图</p>
+<p><img src="https://raw.githubusercontent.com/aidenz2020/FigureBed/master/20200628101128.png" alt=""></p>
+<p>完成创建会看到布局编辑器</p>
+<p><img src="https://raw.githubusercontent.com/aidenz2020/FigureBed/master/20200628101451.png" alt=""></p>
+<p>切换到text看到代码，点击右边的preview预览布局，</p>
+<p>向布局中新建一个button在first_layout.xml中</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"utf-8"</span>?&gt;</span><br><span class="line">&lt;LinearLayout xmlns:android=<span class="string">"http://schemas.android.com/apk/res/android"</span></span><br><span class="line">    android:orientation=<span class="string">"vertical"</span> android:layout_width=<span class="string">"match_parent"</span></span><br><span class="line">    android:layout_height=<span class="string">"match_parent"</span>&gt;</span><br><span class="line">    &lt;Button</span><br><span class="line">        android:id=<span class="string">"@+id/button_1"</span></span><br><span class="line">        android:layout_width=<span class="string">"match_parent"</span></span><br><span class="line">        android:layout_height=<span class="string">"wrap_content"</span></span><br><span class="line">        android:text=<span class="string">"Button 1"</span>/&gt;</span><br><span class="line">&lt;/LinearLayout&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>button属性：</p>
+<ul>
+<li>android:id是当前元素的唯一表示符，之后代码会用这个id对元素进行操作。</li>
+<li>android：layout_width是元素宽度</li>
+<li>android：layout_width是元素长度，match_parent表示与父属性相同，wrap_parent表示元素高度刚好包含里面的内容。</li>
+</ul>
+<p>打开FirstActivity在onCreate()方法中加入代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.example.activitytest;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> androidx.appcompat.app.AppCompatActivity;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.os.Bundle;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FirstActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.first_layout);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>调用setContentView()给当前活动加载一个布局。</p>
+<h2 id="AndroidMainifest注册"><a href="#AndroidMainifest注册" class="headerlink" title="AndroidMainifest注册"></a>AndroidMainifest注册</h2><p>所有活动在AndroidManifest中注册。这里AS已经自动帮助注册好了。</p>
+<h2 id="配置主活动"><a href="#配置主活动" class="headerlink" title="配置主活动"></a>配置主活动</h2><p>注册活动后程序不能运行，因为没有配置主活动。</p>
+<p>在<code>&lt;activity&gt;</code>标签内部加入<code>&lt;intent-filter&gt;</code>标签，并在标签里添加如下代码，修改后的AndroidManifest.xml文件如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">application</span></span></span><br><span class="line"><span class="tag">        <span class="attr">...</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">activity</span> <span class="attr">android:name</span>=<span class="string">".FirstActivity"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:label</span>=<span class="string">"This is FirstActivity"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">intent-filter</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">action</span> <span class="attr">android:name</span>=<span class="string">"android.intent.action.MAIN"</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">category</span> <span class="attr">android:name</span>=<span class="string">"android.intent.category.LAUNCHER"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">intent-filter</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">activity</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">application</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 运行程序。 </p>
+<h2 id="在活动中使用Toast"><a href="#在活动中使用Toast" class="headerlink" title="在活动中使用Toast"></a>在活动中使用Toast</h2><p>Toast是Android提供的一种提醒方式，可以使用它将一些短小的消息通知给用户，一段时间后自动消失。</p>
+<p>首先定义一个弹出Toast的触发点–点击按钮。在onCreate()方法中添加代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">    setContentView(R.layout.first_layout);</span><br><span class="line">    Button button1 = (Button) findViewById(R.id.button_1);</span><br><span class="line">    button1.setOnClickListener(<span class="keyword">new</span> View.OnClickListener()&#123;</span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">            Toast.makeText(FirstActivity.<span class="keyword">this</span>, <span class="string">"click Button 1"</span>,</span><br><span class="line">                Toast.LENGTH_SHORT).show();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>findViewById()获取到布局文件中定义的元素，来得到按钮的实例。返回View对象， 向下转型成Button对象。</p>
+<p>得到实例后，调用setOnClickListener()方法为按钮注册一个监听器，点击按钮会执行监听器中的onClick()方法，所以弹出Toast的功能要在onClick中编写。</p>
+<p>通过makeText()创建出一个Toast对象，调用show()显示。nakeText()三个参数，第一个Context，活动本身就是一个Context对象，因此直接传入FirstActivity.this 第二个Toast显示的文本内容，第三个Toast时长。</p>
+<h2 id="活动中使用menu"><a href="#活动中使用menu" class="headerlink" title="-活动中使用menu"></a>-活动中使用menu</h2><p>在res目录下新建一个menu文件夹，右击res-&gt;new-&gt;Directory,文件名menu，在menu文件夹下新建main的菜单文件，右击menu文件夹-&gt;New-&gt;Menu resource file,键入main，</p>
+<h3 id="定义菜单显示"><a href="#定义菜单显示" class="headerlink" title="定义菜单显示"></a>定义菜单显示</h3><p>向main.xml添加如下代码：</p>
+<p> <img src="https://raw.githubusercontent.com/aidenz2020/FigureBed/master/20200628145015.png" alt=""></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">menu</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">"@+id/add_item"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:title</span>=<span class="string">"Add"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">"@+id/remove_item"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:title</span>=<span class="string">"Remove"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">menu</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">回到FirstActivity重写onCreateOptionsMenu()方法，重写方法Ctrl+O</span><br><span class="line"></span><br><span class="line">![](https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;aidenz2020&#x2F;FigureBed&#x2F;master&#x2F;20200628150120.png)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">然后在onCreateOptionsMenu()方法中编写</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;java</span><br><span class="line">    public boolean onCreateOptionsMenu(Menu menu) &#123;</span><br><span class="line">        getMenuInflater().inflate(R.menu.main, menu);</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>通过getMenuInflater()方法得到MenuInflater对象，再调用它的inflate()就可以给活动创建菜单了。inflate()方法接收两个参数，第一个参数用于指定我们通过哪一个资源文件来创建菜单，这里传入R.menu.main。第二个参数用于指定菜单项添加到哪一个Menu对象中，这里直接使用onCreateOptionsMenu()方法传入的menu中。方法返回true，表示创建的菜单显示出来，false则不显示。</p>
+<h3 id="定义菜单响应事件"><a href="#定义菜单响应事件" class="headerlink" title="定义菜单响应事件"></a>定义菜单响应事件</h3><p>在FirstActivity中重写onOptionsIntemSelected()方法，ctrl+o</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onOptionsItemSelected</span><span class="params">(@NonNull MenuItem item)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">switch</span> (item.getItemId()) &#123;</span><br><span class="line">        <span class="keyword">case</span> R.id.add_item:</span><br><span class="line">            Toast.makeText(FirstActivity.<span class="keyword">this</span>,<span class="string">"Add"</span>,Toast.LENGTH_SHORT).show();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> R.id.remove_item:</span><br><span class="line">            Toast.makeText(FirstActivity.<span class="keyword">this</span>,<span class="string">"Remove"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行程序。</p>
+<p><img src="https://raw.githubusercontent.com/aidenz2020/FigureBed/master/Screenshot_20200628_152020_com.example.activityte.jpg" alt=""></p>
+<h2 id="销毁一个活动"><a href="#销毁一个活动" class="headerlink" title="销毁一个活动"></a>销毁一个活动</h2><p>按下back（返回键）就可以销毁当前活动。</p>
+<p>通过代码销毁活动：修改按钮监听器代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">button1.setOnClickListener(<span class="keyword">new</span> View.OnClickListener()&#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">                finish();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/android/" rel="tag"># android</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/AS%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%971-%E6%97%A5%E5%BF%97%E5%B7%A5%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="prev" title="AS学习日志1-日志工具的使用">
+      <i class="fa fa-chevron-left"></i> AS学习日志1-日志工具的使用
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/AS%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%973-%E4%BD%BF%E7%94%A8Intent%E5%9C%A8%E6%B4%BB%E5%8A%A8%E9%97%B4%E7%A9%BF%E6%A2%AD/" rel="next" title="AS学习日志3-使用Intent在活动间穿梭">
+      AS学习日志3-使用Intent在活动间穿梭 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#创建活动"><span class="nav-number">1.</span> <span class="nav-text">创建活动</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-关掉当前的project-新建一个project"><span class="nav-number">1.1.</span> <span class="nav-text">1. 关掉当前的project 新建一个project</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-手动创建活动"><span class="nav-number">1.2.</span> <span class="nav-text">2. 手动创建活动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建和加载布局"><span class="nav-number">1.3.</span> <span class="nav-text">创建和加载布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AndroidMainifest注册"><span class="nav-number">1.4.</span> <span class="nav-text">AndroidMainifest注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置主活动"><span class="nav-number">1.5.</span> <span class="nav-text">配置主活动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在活动中使用Toast"><span class="nav-number">1.6.</span> <span class="nav-text">在活动中使用Toast</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#活动中使用menu"><span class="nav-number">1.7.</span> <span class="nav-text">-活动中使用menu</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义菜单显示"><span class="nav-number">1.7.1.</span> <span class="nav-text">定义菜单显示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义菜单响应事件"><span class="nav-number">1.7.2.</span> <span class="nav-text">定义菜单响应事件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#销毁一个活动"><span class="nav-number">1.8.</span> <span class="nav-text">销毁一个活动</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Aidenz</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Aidenz</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="Symbols count total">38k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">35 mins.</span>
+</div>
+<!--
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+-->
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+</body>
+</html>
